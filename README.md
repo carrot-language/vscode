@@ -1,6 +1,6 @@
-# carrotlang README
+# 🥕 Carrot Language
 
-This is the README for your extension "carrotlang". After writing up a brief description, we recommend including the following sections.
+A free and open-source programming language that can be transpiled into any modern language.
 
 ## Features
 
