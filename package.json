@@ -1,25 +1,40 @@
 {
-    "name": "carrotlang",
-    "displayName": "carrot",
-    "description": "A lightweight, dynamic, transpiled language and abstract syntax tree.",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.63.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "carrotlang",
+  "displayName": "carrot",
+  "description": "A lightweight, dynamic, transpiled language and abstract syntax tree.",
+  "version": "1.0.0",
+  "icon": ".github/res/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carrot-language/vscode"
+  },
+  "publisher": "FairfieldProgramming",
+  "engines": {
+    "vscode": "^1.63.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "carrot",
+        "aliases": [
+          "Carrot",
+          "carrot"
+        ],
+        "extensions": [
+          "ct"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "carrot",
-            "aliases": ["Carrot", "carrot"],
-            "extensions": ["ct"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "carrot",
-            "scopeName": "source.carrot",
-            "path": "./syntaxes/carrot.tmLanguage.json"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "carrot",
+        "scopeName": "source.carrot",
+        "path": "./syntaxes/carrot.tmLanguage.json"
+      }
+    ]
+  }
 }
