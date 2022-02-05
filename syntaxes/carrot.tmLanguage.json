@@ -16,6 +16,9 @@
     },
     {
       "include": "#identifiers"
+    },
+    {
+      "include": "#comments"
     }
   ],
   "repository": {
@@ -31,7 +34,7 @@
       "patterns": [
         {
           "name": "storage.type",
-          "match": "\\b(int|float|string)\\b"
+          "match": "\\b(int|float|string|any|Array)\\b"
         }
       ]
     },
@@ -47,7 +50,15 @@
       "patterns": [
         {
           "name": "keyword.control.carrot",
-          "match": "\\b(if|while|for|return|function)\\b"
+          "match": "\\b(if|while|for|return|import|export)\\b"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line",
+          "match": "\\/\\/(.)*"
         }
       ]
     },
