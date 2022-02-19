@@ -2,7 +2,7 @@
   "name": "carrotlang",
   "displayName": "carrot",
   "description": "A lightweight, dynamic, transpiled language and abstract syntax tree.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "icon": ".github/res/logo.png",
   "repository": {
     "type": "git",
