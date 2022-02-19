@@ -19,6 +19,9 @@
     },
     {
       "include": "#comments"
+    },
+    {
+      "include": "#preprocessor"
     }
   ],
   "repository": {
@@ -30,11 +33,19 @@
         }
       ]
     },
+    "preprocessor": {
+      "patterns": [
+        {
+          "name": "meta.preprocessor",
+          "match": "\\#(.)*"
+        }
+      ]
+    },
     "types": {
       "patterns": [
         {
           "name": "storage.type",
-          "match": "\\b(int|float|string|any|Array)\\b"
+          "match": "\\b(int|double|float|string|any|Array)\\b"
         }
       ]
     },
