@@ -3,7 +3,19 @@
   "name": "Carrot",
   "patterns": [
     {
+      "include": "#comments"
+    },
+    {
+      "include": "#block_comments"
+    },
+    {
       "include": "#keywords"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#operators"
     },
     {
       "include": "#strings"
@@ -12,13 +24,7 @@
       "include": "#types"
     },
     {
-      "include": "#operators"
-    },
-    {
       "include": "#identifiers"
-    },
-    {
-      "include": "#comments"
     },
     {
       "include": "#preprocessor"
@@ -29,7 +35,7 @@
       "patterns": [
         {
           "name": "keyword.operator",
-          "match": "(<|>)"
+          "match": "(\\<|\\>|\\<\\=|\\>\\=|\\=\\=|\\=|\\-|\\+|\\*|\\/|\\%)"
         }
       ]
     },
@@ -45,7 +51,7 @@
       "patterns": [
         {
           "name": "storage.type",
-          "match": "\\b(int|double|float|string|any|Array)\\b"
+          "match": "\\b(void|int|double|float|string|any|Array)\\b"
         }
       ]
     },
@@ -61,15 +67,32 @@
       "patterns": [
         {
           "name": "keyword.control.carrot",
-          "match": "\\b(if|while|for|return|import|export)\\b"
+          "match": "\\b(if|while|for|return|func|namespace|macro|class|enum)\\b"
         }
       ]
     },
+    "block_comments": {},
     "comments": {
       "patterns": [
         {
           "name": "comment.line",
           "match": "\\/\\/(.)*"
+        },
+        {
+          "name": "comment.block",
+          "match": "\\/\\*(.)*\\*\\/"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.numeric",
+          "match": "[0-9\\.]"
+        },
+        {
+          "name": "constant.language",
+          "match": "\\b(true|false)\\b"
         }
       ]
     },
