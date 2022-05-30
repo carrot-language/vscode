@@ -1,0 +1,10 @@
+{
+	"iconDefinitions": {
+		"_carrot_icon": {
+			"iconPath": "./images/logo.png"
+		},
+	},
+	"fileExtensions": {
+        "ct": "_carrot_icon"
+	}
+}

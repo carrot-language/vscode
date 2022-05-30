@@ -35,6 +35,13 @@
         "scopeName": "source.carrot",
         "path": "./syntaxes/carrot.tmLanguage.json"
       }
+    ],
+    "iconThemes": [
+      {
+        "id": "carrot",
+        "label": "Carrot",
+        "path": "./icons/carrot-icon-theme.json"
+      }
     ]
   }
 }
