@@ -35,7 +35,7 @@
       "patterns": [
         {
           "name": "keyword.operator",
-          "match": "(\\<|\\>|\\<\\=|\\>\\=|\\=\\=|\\=|\\-|\\+|\\*|\\/|\\%)"
+          "match": "(\\<|\\>|\\<\\=|\\>\\=|\\=\\=|\\=|\\-|\\+|\\*|\\/|\\%|\\&\\&|\\|\\||\\^\\^|\\!)"
         }
       ]
     },
@@ -51,7 +51,7 @@
       "patterns": [
         {
           "name": "storage.type",
-          "match": "\\b(void|int|double|float|string|any|Array)\\b"
+          "match": "\\b(void|string|bool|int|float|double|mini|char|Array)\\b"
         }
       ]
     },
