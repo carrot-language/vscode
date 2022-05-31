@@ -2,8 +2,8 @@
   "name": "carrotlang",
   "displayName": "carrot",
   "description": "A lightweight, dynamic, transpiled language and abstract syntax tree.",
-  "version": "1.2.0",
-  "icon": ".github/res/logo.png",
+  "version": "1.2.1",
+  "icon": "icons/images/general.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/carrot-language/vscode"
@@ -34,13 +34,6 @@
         "language": "carrot",
         "scopeName": "source.carrot",
         "path": "./syntaxes/carrot.tmLanguage.json"
-      }
-    ],
-    "iconThemes": [
-      {
-        "id": "carrot",
-        "label": "Carrot",
-        "path": "./icons/carrot-icon-theme.json"
       }
     ]
   }
